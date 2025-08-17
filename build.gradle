@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '3.5.4'
+    id 'org.springframework.boot' version '3.3.2'
     id 'io.spring.dependency-management' version '1.1.7'
 }
 
@@ -38,7 +38,14 @@ dependencies {
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
 
-    implementation 'com.example:UberProject-EntityService:0.0.5-SNAPSHOT'
+    implementation 'com.example:UberProject-EntityService:0.0.6-SNAPSHOT'
+
+    // Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    // Converter (JSON -> Java Objects)
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:4.1.1'
 }
 
 tasks.named('test') {
