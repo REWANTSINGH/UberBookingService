@@ -14,7 +14,7 @@ spring:
       ddl-auto: validate
 
 server:
-  port: 8000
+  port: 8081
 
 eureka:
   client:
